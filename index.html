@@ -1,0 +1,119 @@
+<html>
+  <meta charset="UTF-8" /><meta
+    content="width=device-width, initial-scale=1, user-scalable=1, minimum-scale=1, maximum-scale=5"
+    name="viewport"
+  /><meta content="IE=edge" http-equiv="X-UA-Compatible" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" /><link
+    rel="preconnect"
+    href="https://fonts.gstatic.com"
+    crossorigin
+  /><link
+    href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap"
+    rel="stylesheet"
+  />
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.19/dist/sweetalert2.all.min.js"></script>
+  <link
+    href="https://hanyauntukmu.likeadream.repl.co/style.css"
+    rel="stylesheet"
+    type="text/css"
+  />
+  <script src="https://hanyauntukmu.likeadream.repl.co/script.js"></script>
+  <head> </head>
+  <body>
+    <div id="bodyblur">
+      <img
+        src="https://i.postimg.cc/NMLZ6Zk5/IMG-20220207-131156-010.jpg"
+        width="100%"
+        height="100%"
+      />
+    </div>
+
+    <div id="Content">
+      <div class="image">
+        <img
+          src="https://i.postimg.cc/W4xjf6yM/peachcat-peachcat-and-goma.gif"
+          width="130px"
+          height="130px"
+        />
+      </div>
+      <div>
+        <blockquote>
+          <p id="text"></p>
+          <p id="text2"></p>
+        </blockquote>
+      </div>
+    </div>
+
+    <script type="text/javascript">
+      function play() {
+        var audio = new Audio(
+          "https://sndup.net/tqdx/d"
+        )
+        audio.play()
+      }
+
+      const swals = Swal.mixin({
+        allowOutsideClick: false,
+        cancelButtonColor: "#FF0040",
+      })
+      const swalsy = Swal.mixin({
+        confirmButtonText: "Iya",
+        allowOutsideClick: false,
+      })
+      const swalst = Swal.mixin({
+        allowOutsideClick: false,
+        showConfirmButton: false,
+        timer: 5000,
+        timerProgressBar: true,
+      })
+
+      async function mulaitanya() {
+        var { isConfirmed: tanyawal } = await swals.fire({
+          title: `Halo :D kamu bisa klik tombol dibawah ya`,
+          imageUrl: "https://i.postimg.cc/0j2LDLxP/heart-happy.gif",
+          imageWidth: 120,
+          imageHeight: 120,
+          confirmButtonText: "Okay",
+          allowOutsideClick: false,
+          showCancelButton: false,
+        })
+        if (tanyawal) {
+          play()
+          kuis()
+        }
+      }
+
+      async function kuis() {
+        await swalst.fire({
+          title: "Lelah ya hari ini? :(",
+          imageUrl: "https://i.postimg.cc/02wF21b1/peach-goma.gif",
+          imageWidth: 120,
+          imageHeight: 120,
+        })
+        await swalst.fire({
+          title: "Its okay, selamat ya udah bisa lewatin semua hal dihari ini",
+          imageUrl: "https://i.postimg.cc/g06FWScx/tepukbadan.gif",
+          imageWidth: 120,
+          imageHeight: 120,
+        })
+        await swalst.fire({
+          title: "Jangan lupa minum ..",
+          imageUrl: "https://i.postimg.cc/vZWmnK2p/gigit.gif",
+          imageWidth: 120,
+          imageHeight: 120,
+        })
+        await swalst.fire({
+          title: "Maaf aku hanya bisa support kamu aja &#129402;",
+          imageUrl: "https://i.postimg.cc/SsmkcNY9/bear-cute-1.gif",
+          imageWidth: 120,
+          imageHeight: 120,
+        })
+        text = "You always be my sweetheart "
+        emotnama = "&#10084;"
+        text2 = "Jaga diri baik-baik... Jangan sedih, kita ketemu nanti :) "
+        showDiv()
+      }
+      mulaitanya()
+    </script>
+  </body>
+</html>
