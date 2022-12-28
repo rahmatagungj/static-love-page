@@ -1,0 +1,148 @@
+# Th<html>
+#   <meta charset="UTF-8" /><meta
+#     content="width=device-width, initial-scale=1, user-scalable=1, minimum-scale=1, maximum-scale=5"
+#     name="viewport"
+#   /><meta content="IE=edge" http-equiv="X-UA-Compatible" />
+#   <link rel="preconnect" href="https://fonts.googleapis.com" /><link
+#     rel="preconnect"
+#     href="https://fonts.gstatic.com"
+#     crossorigin
+#   /><link
+#     href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap"
+#     rel="stylesheet"
+#   />
+#   <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.19/dist/sweetalert2.all.min.js"></script>
+#   <link
+#     href="https://hanyauntukmu.likeadream.repl.co/style.css"
+#     rel="stylesheet"
+#     type="text/css"
+#   />
+#   <script src="https://hanyauntukmu.likeadream.repl.co/script.js"></script>
+#   <head>
+#     <title> Haiii ^.^</title>
+#   </head>
+#   <style>
+#     body {
+#       background-image: url(https://i.postimg.cc/NMLZ6Zk5/IMG-20220207-131156-010.jpg);
+#       background-repeat: no-repeat;
+#       background-size: cover;
+#       background-position-y: bottom;
+#     }
+#     body::before {
+#       content: "" !important;
+#       color: transparent !important;
+#     }
+#   </style>
+#   <body>
+#     <div id="bodyblur">
+#       <!-- <img
+#         src="https://i.postimg.cc/NMLZ6Zk5/IMG-20220207-131156-010.jpg"
+#         width="100%"
+#         height="100%"
+#       /> -->
+#     </div>
+#
+#     <div id="Content">
+#       <div class="image">
+#         <img
+#           src="https://i.postimg.cc/W4xjf6yM/peachcat-peachcat-and-goma.gif"
+#           width="130px"
+#           height="130px"
+#         />
+#       </div>
+#       <div>
+#         <blockquote>
+#           <p id="text"></p>
+#           <p id="text2"></p>
+#         </blockquote>
+#       </div>
+#     </div>
+#
+#     <script type="text/javascript">
+#       function play() {
+#         var audio = new Audio(
+#           "https://sndup.net/tqdx/d"
+#         )
+#         audio.play()
+#       }
+#
+#       const swals = Swal.mixin({
+#         allowOutsideClick: false,
+#         cancelButtonColor: "#FF0040",
+#       })
+#       const swalsy = Swal.mixin({
+#         confirmButtonText: "Iya",
+#         allowOutsideClick: false,
+#       })
+#       const swalst = Swal.mixin({
+#         allowOutsideClick: false,
+#         showConfirmButton: false,
+#         timer: 5000,
+#         timerProgressBar: true,
+#       })
+#
+#       async function mulaitanya() {
+#         var { isConfirmed: tanyawal } = await swals.fire({
+#           title: `you can click the botton`,
+#           imageUrl: "https://i.postimg.cc/LXCpWMTs/message-Image-1624941414753.jpg",
+#           imageWidth: 120,
+#           imageHeight: 120,
+#           confirmButtonText: "Okay",
+#           allowOutsideClick: false,
+#           showCancelButton: false,
+#         })
+#         if (tanyawal) {
+#           play()
+#           kuis()
+#         }
+#       }
+#
+#       async function kuis() {
+#         await swalst.fire({
+#           title: "How was your day? :)",
+#           imageUrl: "https://i.postimg.cc/02wF21b1/peach-goma.gif",
+#           imageWidth: 120,
+#           imageHeight: 120,
+#         })
+#         await swalst.fire({
+#           title: "I wish hari-harimu menyenangkan dan selalu menyenangkannnn hehe",
+#           imageUrl: "https://i.postimg.cc/g06FWScx/tepukbadan.gif",
+#           imageWidth: 120,
+#           imageHeight: 120,
+#         })
+#         await swalst.fire({
+#           title: "Jangan lupa minum airr ..",
+#           imageUrl: "https://i.postimg.cc/vZWmnK2p/gigit.gif",
+#           imageWidth: 120,
+#           imageHeight: 120,
+#         })
+#         await swalst.fire({
+#           title: "sorry I can't do anything useful for you",
+#           imageUrl: "https://i.postimg.cc/SsmkcNY9/bear-cute-1.gif",
+#           imageWidth: 120,
+#           imageHeight: 120,
+#         })
+#         text = "You always be my sweetheart :* sehat selaluuuuuu "
+#         emotnama = "&#10084;"
+#         text2 = "Jaga diri baik-baik... Jangan banyak pikiran hehe everythings gonna be okay:) "
+#         showDiv()
+#       }
+#       mulaitanya()
+#     </script>
+#   </body>
+# </html>is is a sample Python script.
+
+# Press Shift+F10 to execute it or replace it with your code.
+# Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
+
+
+def print_hi(name):
+    # Use a breakpoint in the code line below to debug your script.
+    print(f'Hi, {name}')  # Press Ctrl+F8 to toggle the breakpoint.
+
+
+# Press the green button in the gutter to run the script.
+if __name__ == '__main__':
+    print_hi('PyCharm')
+
+# See PyCharm help at https://www.jetbrains.com/help/pycharm/
