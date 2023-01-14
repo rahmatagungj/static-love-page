@@ -1,1 +1,1 @@
-Hehe2x/static-love-page
+Hehe2xstatic-love-page
